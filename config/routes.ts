@@ -6,12 +6,7 @@ export default [
   },
   { path: '/', redirect: '/add_chart' },
   { path: '/add_chart', name: 'Add Chart', icon: 'barChart', component: './AddChart' },
-  {
-    path: '/add_chart_sync',
-    name: 'Add Chart Sync',
-    icon: 'barChart',
-    component: './AddChartSync',
-  },
+  // { path: '/add_chart_sync',name: 'Add Chart Sync', icon: 'barChart', component: './AddChartSync'},
   { path: '/my_chart', name: 'My Chart', icon: 'pieChart', component: './MyChart' },
   {
     path: '/admin',
