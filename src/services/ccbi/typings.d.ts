@@ -29,6 +29,12 @@ declare namespace API {
     message?: string;
   };
 
+  type BaseResponsePageChartDetailVO = {
+    code?: number;
+    data?: PageChartVODetail;
+    message?: string;
+  };
+
   type BaseResponsePageUser = {
     code?: number;
     data?: PageUser;
@@ -78,6 +84,24 @@ declare namespace API {
     isDelete?: number;
     isPublic?: number;
     taskId?: string;
+    title?: string;
+    updateTime?: string;
+    userId?: string;
+  };
+
+  type ChartVO = {
+    chartData?: string;
+    chartType?: string;
+    createTime?: string;
+    execMessage?: string;
+    generateChart?: string;
+    generateResult?: string;
+    goal?: string;
+    id?: string;
+    isDelete?: number;
+    isPublic?: number;
+    taskId?: string;
+    status: string;
     title?: string;
     updateTime?: string;
     userId?: string;
@@ -174,6 +198,19 @@ declare namespace API {
     orders?: OrderItem[];
     pages?: number;
     records?: ChartDetail[];
+    searchCount?: boolean;
+    size?: number;
+    total?: number;
+  };
+
+  type PageChartVODetail = {
+    countId?: string;
+    current?: number;
+    maxLimit?: number;
+    optimizeCountSql?: boolean;
+    orders?: OrderItem[];
+    pages?: number;
+    records?: ChartVO[];
     searchCount?: boolean;
     size?: number;
     total?: number;

@@ -5,7 +5,8 @@ export default [
     routes: [{ name: '登录', path: '/user/login', component: './User/Login' }],
   },
   { path: '/', redirect: '/add_chart' },
-  { path: '/add_chart', name: 'Add Chart', icon: 'table', component: './AddChart' },
+  { path: '/add_chart', name: 'Add Chart', icon: 'barChart', component: './AddChart' },
+  { path: '/my_chart', name: 'My Chart', icon: 'pieChart', component: './MyChart' },
   {
     path: '/admin',
     name: '管理页',

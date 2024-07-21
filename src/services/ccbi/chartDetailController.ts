@@ -108,7 +108,7 @@ export async function listChartByPageUsingPost(
   body: API.ChartQueryRequest,
   options?: { [key: string]: any },
 ) {
-  return request<API.BaseResponsePageChartDetail>('/api/chart/list/page', {
+  return request<API.BaseResponsePageChartDetailVO>('/api/chart/list/page', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -123,7 +123,7 @@ export async function listMyChartByPageUsingPost(
   body: API.ChartQueryRequest,
   options?: { [key: string]: any },
 ) {
-  return request<API.BaseResponsePageChartDetail>('/api/chart/my/list/page', {
+  return request<API.BaseResponsePageChartDetailVO>('/api/chart/my/list/page', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
