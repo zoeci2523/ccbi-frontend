@@ -1,4 +1,8 @@
-# ccbi frontend
+# CCBI frontend
+
+Harness the Power of AI for Effortless Chart Generation
+
+ChartGen AI is a platform leveraging the power of AI to automatically generate insightful charts tailored to your specific needs. Simply provide your data, desired chart type and analysis goal, and ChartGen AI will do the rest.
 
 This project is initialized with [Ant Design Pro](https://pro.ant.design). Follow is the quick guide for how to use.
 
