@@ -100,7 +100,7 @@ export async function listUserVoByPageUsingPost(
 /** userLogin POST /api/user/login */
 export async function userLoginUsingPost(
   // 叠加生成的Param类型 (非body参数swagger默认没有生成对象)
-  params: API.userLoginUsingPOSTParams,
+  params: API.UserLoginUsingPOSTParams,
   options?: { [key: string]: any },
 ) {
   return request<API.BaseResponseLoginUserVO>('/api/user/login', {

@@ -269,7 +269,7 @@ declare namespace API {
     username?: string;
   };
 
-  type userLoginUsingPOSTParams = {
+  type UserLoginUsingPOSTParams = {
     /** account */
     account?: string;
     /** password */
